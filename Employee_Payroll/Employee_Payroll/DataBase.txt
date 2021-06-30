@@ -33,3 +33,11 @@ update emplyeepayroll set gender='M' where eid=1;
 update emplyeepayroll set gender='M' where eid=2;
 update emplyeepayroll set gender='F' where eid=3;
 update emplyeepayroll set gender='M' where eid=4;
+
+//perform functions like sum ,avg, min,max
+select COUNT(gender) from emplyeepayroll where gender='M';
+select AVG(esalary) from emplyeepayroll where gender='M';
+select SUM(esalary) from emplyeepayroll where gender='M' group by gender;
+select MIN(esalary) from emplyeepayroll where gender='F' group by gender;
+select MIN(esalary) from emplyeepayroll where gender='M' group by gender;
+select MAX(esalary) from emplyeepayroll where gender='M' group by gender;
