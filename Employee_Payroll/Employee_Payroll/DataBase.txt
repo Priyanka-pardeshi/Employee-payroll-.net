@@ -41,3 +41,9 @@ select SUM(esalary) from emplyeepayroll where gender='M' group by gender;
 select MIN(esalary) from emplyeepayroll where gender='F' group by gender;
 select MIN(esalary) from emplyeepayroll where gender='M' group by gender;
 select MAX(esalary) from emplyeepayroll where gender='M' group by gender;
+
+//added an fields to table
+select * from emplyeepayroll;
+alter table emplyeepayroll add eaddress varchar(250) not null default 'pune';
+alter table emplyeepayroll add ephone int;
+alter table emplyeepayroll add edepartment varchar(20);
