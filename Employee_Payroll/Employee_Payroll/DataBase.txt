@@ -26,3 +26,10 @@ select GETDATE();
 //query using CAST and NOW
 Select {fn NOW()};   
 select CAST(23.44 as money);
+
+//Added an new fiels as gender and updating table
+alter table emplyeepayroll add gender varchar(4);
+update emplyeepayroll set gender='M' where eid=1;
+update emplyeepayroll set gender='M' where eid=2;
+update emplyeepayroll set gender='F' where eid=3;
+update emplyeepayroll set gender='M' where eid=4;
