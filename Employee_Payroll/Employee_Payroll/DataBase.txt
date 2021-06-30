@@ -1,0 +1,10 @@
+create database EmployeePayroll;
+
+use EmployeePayroll;
+
+create table payroll(eid int not null primary auto_increment,
+ename varchar(40),
+esalary float,
+estartdate date);
+
+                                                             
