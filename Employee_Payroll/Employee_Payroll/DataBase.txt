@@ -59,3 +59,8 @@ update employeepayroll set eaddress='pune',ephone=85871156,edepartment='hr',basi
 update employeepayroll set eaddress='mumbai',ephone=9512416,edepartment='developer',basicpay=40000,deduction=1000,taxpay=3000,incometax=2000,netpay=1100 where eid=3;
 update employeepayroll set eaddress='satara',ephone=95154782,edepartment='manager',basicpay=50000,deduction=2500,taxpay=5000,incometax=4500,netpay=1300 where eid=4;
 
+//inserted an same records --but because of its unique id it will treated as different
+insert into employeepayroll values('terissa',70000,'2013-01-02','F','goa',9898754,'sales',54000,2000,500,2000,1500);
+insert into employeepayroll values('terissa',70000,'2013-01-02','F','goa',9898754,'marketing',54000,2000,500,2000,1500);
+select * from employeepayroll where ename='terissa';
+
