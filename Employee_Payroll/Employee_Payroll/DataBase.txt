@@ -2,15 +2,18 @@ create database EmployeePayroll;
 
 use EmployeePayroll;
 
+/*Query for create*/
 create table emplyeepayroll(eid int not null primary auto_increment,
 ename varchar(40),
 esalary float,
 estartdate date);
 
+/*Query for insert*/
 insert into emplyeepayroll values('sidho',234555,'2017-02-11');
 insert into emplyeepayroll values('sid',2355,'2017-02-05');
 insert into emplyeepayroll values('sidhaa',24555,'2017-03-11');
 insert into emplyeepayroll values('sidh',23455,'2017-07-12');
 
-
+/*Query for select*/
+select * from emplyeepayroll;
                                                              
