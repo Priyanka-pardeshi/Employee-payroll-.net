@@ -47,3 +47,15 @@ select * from emplyeepayroll;
 alter table emplyeepayroll add eaddress varchar(250) not null default 'pune';
 alter table emplyeepayroll add ephone int;
 alter table emplyeepayroll add edepartment varchar(20);
+
+//added fiedls tax's
+alter table employeepayroll add basicpay int;
+alter table employeepayroll add deduction int; 
+alter table employeepayroll add taxpay int;
+alter table employeepayroll add incometax int ;
+alter table employeepayroll add netpay int;
+update employeepayroll set eaddress='satara',ephone=51201156,edepartment='manager',basicpay=30000,deduction=2000,taxpay=3000,incometax=4000,netpay=1000 where eid=1;
+update employeepayroll set eaddress='pune',ephone=85871156,edepartment='hr',basicpay=30000,deduction=2000,taxpay=1500,incometax=3000,netpay=1090 where eid=2;
+update employeepayroll set eaddress='mumbai',ephone=9512416,edepartment='developer',basicpay=40000,deduction=1000,taxpay=3000,incometax=2000,netpay=1100 where eid=3;
+update employeepayroll set eaddress='satara',ephone=95154782,edepartment='manager',basicpay=50000,deduction=2500,taxpay=5000,incometax=4500,netpay=1300 where eid=4;
+
